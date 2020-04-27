@@ -1,0 +1,13 @@
+<H1>WORDCOUNT</H1>
+
+<form action="{% url 'count' %}">  <!-- count = name given in urls.py -->
+    <textarea cols="40" rows="5" name="fulltext"></textarea>  <!-- ? name=fulltext is patched to url as a parameter  -->
+    <br />
+    <input type="submit" value="Count!" />
+<br /> <br /> <br />
+
+<a href="{% url 'about' %}">About</a>
+
+
+
+</form>
